@@ -1,20 +1,20 @@
 
 
-# https://github.com/kubeflow/pipelines/tree/master/samples
+### https://github.com/kubeflow/pipelines/tree/master/samples
 
 
-# Mac OS 
-# set up Kind
+## Mac OS 
+## set up Kind
 
 > brew install kind
 
 
 
-# Start Minikube
+### Start Minikube
 > minikube start
 
 
-# Deploy up kubeflow pipelines
+## Deploy up kubeflow pipelines
 
 > # env/platform-agnostic-pns hasn't been publically released, so you will install it from master
 export PIPELINE_VERSION=1.7.1
@@ -31,15 +31,15 @@ Access UI in localhost/8080
 https://www.kubeflow.org/docs/components/pipelines/installation/localcluster-deployment/
 
 
-# Install pytorch-kfp-components
+## Install pytorch-kfp-components
 > pip3 install -U pytorch-kfp-components
 
 
-# Generate yaml files from templates
+## Generate yaml files from templates
 > python utils/generate_templates.py cifar10/template_mapping.json
 
 
-# Generate pipeline yaml file
+## Generate pipeline yaml file
 > python cifar10/pipeline.py
 
 
@@ -47,14 +47,17 @@ https://www.kubeflow.org/docs/components/pipelines/installation/localcluster-dep
 
 
 
-# Run 1 
+## Run 1 
 * Model - Resnet50 
 * Pretrained - Yes/ImageNet
 * Epoch - 1
 * Augmentation - No
 
+### Confusion Matrix
+[resnet.jpg](https://postimg.cc/nXQ6J4F3)
 
-https://ibb.co/p16ydtf
+### Loss Curve
+[Screenshot-2022-01-03-at-00-16-20.png](https://postimg.cc/vg1nqZLx)
 
 
 # Run 2
@@ -63,13 +66,22 @@ https://ibb.co/p16ydtf
 * Epoch - 10
 * Augmentation - No
 
+### Confusion Matrix
+[Screenshot-2022-01-03-at-00-21-08.png](https://postimg.cc/p9vxcGff)
 
-# Run 2
+
+### Loss Curve
+[Screenshot-2022-01-03-at-00-29-32.png](https://postimg.cc/dhtjRvXr)
+
+
+# Run 3
 * Model - Image Augmentation 
 * Pretrained - Yes/ImageNet
 * Epoch - 10
 * Augmentation - Yes
 
+### Confusion Matrix
+[Screenshot-2022-01-03-at-00-35-40.png](https://postimg.cc/XpDty21j)
 
-
-
+### Loss Curve
+[Screenshot-2022-01-03-at-00-35-40.png](https://postimg.cc/XpDty21j)
