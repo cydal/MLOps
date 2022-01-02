@@ -81,7 +81,7 @@ https://www.kubeflow.org/docs/components/pipelines/installation/localcluster-dep
 * Augmentation - Yes
 
 ### Confusion Matrix
-[Screenshot-2022-01-03-at-00-35-40.png](https://postimg.cc/XpDty21j)
+[![Screenshot-2022-01-03-at-00-37-51.png](https://i.postimg.cc/hGYfScrw/Screenshot-2022-01-03-at-00-37-51.png)](https://postimg.cc/PLmtyG0z)
 
 ### Loss Curve
-[Screenshot-2022-01-03-at-00-35-40.png](https://postimg.cc/XpDty21j)
+[![Screenshot-2022-01-03-at-00-35-40.png](https://i.postimg.cc/Dw2hHHqX/Screenshot-2022-01-03-at-00-35-40.png)](https://postimg.cc/XpDty21j)
