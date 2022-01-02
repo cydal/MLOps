@@ -54,10 +54,10 @@ https://www.kubeflow.org/docs/components/pipelines/installation/localcluster-dep
 * Augmentation - No
 
 ### Confusion Matrix
-[resnet.jpg](https://postimg.cc/nXQ6J4F3)
+[![resnet.jpg](https://i.postimg.cc/Qd6scmRZ/resnet.jpg)](https://postimg.cc/nXQ6J4F3)
 
 ### Loss Curve
-[Screenshot-2022-01-03-at-00-16-20.png](https://postimg.cc/vg1nqZLx)
+[![Screenshot-2022-01-03-at-00-16-20.png](https://i.postimg.cc/3R1Zwyk1/Screenshot-2022-01-03-at-00-16-20.png)](https://postimg.cc/vg1nqZLx)
 
 
 # Run 2
@@ -67,11 +67,11 @@ https://www.kubeflow.org/docs/components/pipelines/installation/localcluster-dep
 * Augmentation - No
 
 ### Confusion Matrix
-[Screenshot-2022-01-03-at-00-21-08.png](https://postimg.cc/p9vxcGff)
+[![Screenshot-2022-01-03-at-00-21-08.png](https://i.postimg.cc/BvL66RtV/Screenshot-2022-01-03-at-00-21-08.png)](https://postimg.cc/p9vxcGff)
 
 
 ### Loss Curve
-[Screenshot-2022-01-03-at-00-29-32.png](https://postimg.cc/dhtjRvXr)
+[![Screenshot-2022-01-03-at-00-29-32.png](https://i.postimg.cc/htVZBt1y/Screenshot-2022-01-03-at-00-29-32.png)](https://postimg.cc/dhtjRvXr)
 
 
 # Run 3
