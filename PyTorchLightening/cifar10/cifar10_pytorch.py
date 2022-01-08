@@ -31,6 +31,10 @@ from pytorch_kfp_components.components.utils.argument_parsing import (
     parse_input_args,
 )
 
+from pytorch_lightning.callbacks import ModelSummary, DeviceStatsMonitor, EarlyStopping, ModelCheckpoint
+from pytorch_lightning.callbacks import RichProgressBar, QuantizationAwareTraining
+
+
 # Argument parser for user defined paths
 parser = ArgumentParser()
 
@@ -137,7 +141,9 @@ if "accelerator" in ptl_dict and ptl_dict["accelerator"] == "None":
 trainer_args = {
     "logger": tboard,
     "checkpoint_callback": True,
-    "callbacks": [lr_logger, early_stopping, checkpoint_callback],
+    "callbacks": [lr_logger, early_stopping, 
+                  checkpoint_callback, RichProgressBar(), 
+                  ModelPruning("l1_unstructured", amount=0.5)],
 }
 
 if not ptl_dict["max_epochs"]:
@@ -169,6 +175,7 @@ trainer = Trainer(
     module_file_args=args,
     data_module_args=data_module_args,
     trainer_args=trainer_args,
+    precision=16, auto_lr_find=True,
 )
 
 model = trainer.ptl_trainer.lightning_module
