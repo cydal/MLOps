@@ -101,7 +101,7 @@ DATALOADER:0 TEST RESULTS
 
 
 ### RichProgressBar
-##### Generates a summary of all layers in a LightningModule.
+##### Create a progress bar with rich text formatting.
 
 
 ```python
@@ -146,7 +146,6 @@ DATALOADER:0 TEST RESULTS
 
 
 ```python
-from pytorch_lightning.callbacks import RichProgressBar
 
 # Initiating the training process
 trainer = Trainer(
